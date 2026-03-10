@@ -1,0 +1,115 @@
+/* Import font Pixel yang bersih dan ramah */
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=VT323&display=swap');
+
+/* Styling untuk keseluruhan halaman */
+body {
+    background-color: #f7e8d0; /* Warna krem hangat */
+    /* Pola grid kotak-kotak kecil ala buku tulis */
+    background-image: 
+        linear-gradient(#e5d1b3 1px, transparent 1px),
+        linear-gradient(90deg, #e5d1b3 1px, transparent 1px);
+    background-size: 20px 20px;
+    font-family: 'DotGothic16', sans-serif;
+    color: #5d4037; /* Cokelat tua untuk teks agar mata tidak lelah */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container utama - Gaya Dialogue Box RPG Klasik */
+.card {
+    max-width: 600px;
+    width: 100%;
+    background: #fffaf0; /* Warna kertas putih gading */
+    padding: 30px;
+    
+    /* Pixel Border bertingkat (Efek Bevel Ringan) */
+    border: 4px solid #8d6e63;
+    box-shadow: 
+        inset -4px -4px 0px #d7ccc8, 
+        inset 4px 4px 0px #ffffff,
+        6px 6px 0px rgba(141, 110, 99, 0.2);
+    
+    position: relative;
+    animation: slideIn 0.5s steps(5) forwards;
+}
+
+/* Header utama - Gaya Judul Petualangan */
+h1 {
+    font-family: 'VT323', monospace;
+    font-size: 3rem;
+    color: #d84315; /* Oranye bata yang cerah */
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    /* Shadow pixelated */
+    text-shadow: 3px 3px 0px #ffccbc;
+}
+
+/* Paragraf - Teks dialog yang mudah dibaca */
+p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #4e342e;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.5);
+    border: 2px dashed #bcaaa4;
+    margin-bottom: 15px;
+}
+
+/* Garis pemisah - Ornamen dot-pixel */
+hr {
+    border: none;
+    height: 6px;
+    background-image: radial-gradient(#8d6e63 2px, transparent 2px);
+    background-size: 10px 10px;
+    background-repeat: repeat-x;
+    margin: 25px 0;
+    opacity: 0.5;
+}
+
+/* Greeting - Tekan tombol start */
+small {
+    display: block;
+    font-family: 'VT323', monospace;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #2e7d32; /* Hijau alam */
+    margin-top: 20px;
+    letter-spacing: 2px;
+    animation: pulse 1.2s steps(2) infinite;
+}
+
+/* Dekorasi pojok - Ikon Level/Exp */
+.card::before {
+    content: "LV. 99";
+    position: absolute;
+    top: -15px;
+    right: 20px;
+    background: #ffca28;
+    padding: 5px 10px;
+    border: 3px solid #8d6e63;
+    font-family: 'VT323', monospace;
+    font-weight: bold;
+    color: #5d4037;
+    box-shadow: 3px 3px 0px rgba(0,0,0,0.1);
+}
+
+/* =========================================
+   ANIMASI PIXEL TERANG
+   ========================================= */
+
+/* Animasi Muncul Berjenjang */
+@keyframes slideIn {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Animasi Berdenyut Retro */
+@keyframes pulse {
+    0% { transform: scale(1); opacity: 1; }
+    100% { transform: scale(1.05); opacity: 0.7; }
+}
