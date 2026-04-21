@@ -1,6 +1,12 @@
 import { Link, NavLink } from "react-router-dom";
 
 export default function Sidebar() {
+        const menuClass = ({ isActive }) =>
+        `flex cursor-pointer items-center rounded-xl p-4  space-x-2
+        ${isActive ? 
+            "text-hijau bg-green-200 font-extrabold" : 
+            "text-gray-600 hover:text-hijau hover:bg-green-200 hover:font-extrabold"
+        }`
     return (
         <div id="sidebar" className="w-64 min-h-screen bg-white p-6 flex flex-col justify-between border-r border-garis">
             <div>
@@ -17,7 +23,7 @@ export default function Sidebar() {
                     <li>
                     <NavLink 
                     to="/"
-                    className="flex items-center gap-3 text-hijau bg-green-50 p-3 rounded-lg font-semibold">
+                    className={menuClass}>
                         Dashboard
                     </NavLink>
                     </li>
@@ -25,7 +31,7 @@ export default function Sidebar() {
                     <li>
                     <NavLink 
                     to="/Orders"
-                    className="flex items-center gap-3 text-teks-samping p-3 hover:text-hijau cursor-pointer">
+                    className={menuClass}>
                         Orders
                     </NavLink>
                     </li>
@@ -33,7 +39,7 @@ export default function Sidebar() {
                     <li>
                     <NavLink 
                     to="/Customers"
-                    className="flex items-center gap-3 text-teks-samping p-3 hover:text-hijau cursor-pointer">
+                    className={menuClass}>
                         Customers
                     </NavLink>
                     </li>
