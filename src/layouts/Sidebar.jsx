@@ -43,6 +43,16 @@ export default function Sidebar() {
                         Customers
                     </NavLink>
                     </li>
+
+                     <li><NavLink to="/Error400" className={menuClass}>Error 400</NavLink></li>
+
+                    <li><NavLink to="/Error401" className={menuClass}>Error 401</NavLink></li>
+
+                    <li><NavLink to="/Error403" className={menuClass}>Error 403</NavLink></li>
+    
+        
+
+                    
                 </ul>
             </div>
 

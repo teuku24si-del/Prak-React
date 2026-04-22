@@ -1,25 +1,35 @@
-export default function PageHeader(props) {
+export default function PageHeader({ title, breadcrumb, children }) {
     return (
         <div id="pageheader-container" className="flex justify-between items-end mb-4">
             <div id="pageheader-left" className="flex flex-col gap-1">
-                {/* Judul Dashboard yang besar dan tegas */}
+                {/* 1. Menggunakan props title */}
                 <h1 id="page-title" className="text-3xl font-bold text-teks">
-                    {props.title}
+                    {title}
                 </h1>
                 
-                {/* Breadcrumb dengan warna yang lebih soft */}
+                {/* 2. Menggunakan props breadcrumb (Logic untuk menangani String atau Array) */}
                 <div id="breadcrumb-links" className="flex items-center gap-2 text-sm text-teks-samping">
-                    <span id="breadcrumb-home" className="hover:text-hijau cursor-pointer transition-colors">Home</span>
-                    <span id="breadcrumb-separator" className="text-gray-300">/</span>
-                    <span id="breadcrumb-current">Home Detail</span>
-                    <span id="breadcrumb-separator" className="text-gray-300">/</span>
-                    <span id="breadcrumb-current" className="text-teks">Home Very Detail</span>
+                    {Array.isArray(breadcrumb) ? (
+                        breadcrumb.map((item, index) => (
+                            <div key={index} className="flex items-center gap-2">
+                                <span className="hover:text-hijau cursor-pointer transition-colors">
+                                    {item}
+                                </span>
+                                {index < breadcrumb.length - 1 && (
+                                    <span className="text-gray-300">/</span>
+                                )}
+                            </div>
+                        ))
+                    ) : (
+                        // Jika breadcrumb hanya string biasa
+                        <span>{breadcrumb}</span>
+                    )}
                 </div>
             </div>
 
-            {/* Tombol Aksi di sisi kanan (Opsional, jika di Gambar 2 tidak ada bisa dikosongkan) */}
+            {/* 3. Menggunakan props children untuk konten fleksibel di sisi kanan */}
             <div id="action-button">
-                {/* Kamu bisa menambahkan tombol di sini jika diperlukan sesuai modul */}
+                {children}
             </div>
         </div>
     );

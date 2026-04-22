@@ -1,4 +1,4 @@
-import { FaShoppingCart, FaTruck, FaBan, FaDollarSign, FaArrowUp, FaArrowDown } from "react-icons/fa";
+import { FaShoppingCart, FaTruck, FaBan, FaDollarSign, FaArrowUp, FaArrowDown, FaDownload } from "react-icons/fa";
 import PageHeader from "../components/PageHeader"; 
 
 export default function Dashboard() {
@@ -11,9 +11,18 @@ export default function Dashboard() {
 
     return (
         <div id="dashboard-container" className="flex flex-col gap-8 p-2">
-            <PageHeader /> 
+            {/* PEMANGGILAN KOMPONEN PAGEHEADER SESUAI LATIHAN */}
+            <PageHeader 
+                title="Dashboard Overview" 
+                breadcrumb={["Home", "Analytics", "Dashboard"]}
+            >
+                {/* Ini dikirim sebagai 'children' ke sisi kanan PageHeader */}
+                <button className="flex items-center gap-2 bg-hijau text-white px-4 py-2 rounded-lg hover:bg-opacity-90 transition-all shadow-sm text-sm font-medium">
+                    <FaDownload /> Download Report
+                </button>
+            </PageHeader>
 
-            {/* Grid Statistik dengan Trend Badge (Improvisasi 2) */}
+            {/* Grid Statistik dengan Trend Badge */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <StatCard icon={<FaShoppingCart />} title="75" subtitle="Total Orders" color="hijau" trend="+4%" up />
                 <StatCard icon={<FaTruck />} title="175" subtitle="Total Delivered" color="biru" trend="+12%" up />
@@ -21,7 +30,7 @@ export default function Dashboard() {
                 <StatCard icon={<FaDollarSign />} title="Rp.128" subtitle="Total Revenue" color="kuning" trend="+8%" up />
             </div>
 
-            {/* Tabel Recent Orders (Improvisasi 3) */}
+            {/* Tabel Recent Orders */}
             <div className="bg-white p-6 rounded-2xl shadow-sm border border-garis/50">
                 <h3 className="text-xl font-bold mb-6">Recent Orders</h3>
                 <div className="overflow-x-auto">
@@ -58,7 +67,7 @@ export default function Dashboard() {
     );
 }
 
-// Komponen Pembantu agar kode lebih bersih
+// Komponen Pembantu StatCard tetap sama
 function StatCard({ icon, title, subtitle, color, trend, up }) {
     const colorMap = {
         hijau: "bg-green-100/50 text-hijau",
@@ -69,7 +78,7 @@ function StatCard({ icon, title, subtitle, color, trend, up }) {
 
     return (
         <div className="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-all border border-garis/50 relative overflow-hidden group">
-            <div className={`absolute top-0 right-0 w-1 h-full bg-${color}`} />
+            <div className={`absolute top-0 right-0 w-1 h-full bg-${color === 'hijau' ? 'green-500' : color === 'biru' ? 'blue-500' : color === 'merah' ? 'red-500' : 'yellow-500'}`} />
             <div className="flex items-center gap-5">
                 <div className={`${colorMap[color]} p-4 rounded-2xl text-3xl group-hover:scale-110 transition-transform`}>{icon}</div>
                 <div className="flex flex-col">
