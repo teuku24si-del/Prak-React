@@ -47,7 +47,7 @@ export default function Header() {
                     <div className="bg-red-50 p-2 rounded-full text-merah cursor-pointer hover:scale-110 transition-transform"><SlSettings /></div>
                 </div>
                 <div className="flex items-center gap-3 border-l border-garis pl-6">
-                    <span className="text-sm text-teks">Hello, <b className="text-teks">Fikri Muhaffizh</b></span>
+                    <span className="text-sm text-teks">Hello, <b className="text-teks">Teuku Muhammad Hasbi</b></span>
                     <img src="https://avatar.iran.liara.run/public/28" className="w-10 h-10 rounded-full border-2 border-garis shadow-sm" alt="avatar" />
                 </div>
             </div>
