@@ -1,7 +1,7 @@
 import React, { Suspense, useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
-const Dashboard = React.lazy(() => import("./pages/Dashboard"))
+const Dashboard = React.lazy(() => import("./pages/dashboard"))
 import "./assets/tailwind.css";
 import { Route, Routes } from "react-router-dom";
 import Loading from "./components/Loading";
