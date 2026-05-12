@@ -1,0 +1,272 @@
+[
+  {
+    "id": 1,
+    "title": "Laptop Gaming Pro X",
+    "code": "LTP-001",
+    "category": "Electronics",
+    "brand": "TechNova",
+    "price": 15000000,
+    "stock": 12
+  },
+  {
+    "id": 2,
+    "title": "Smartphone Ultra 5G",
+    "code": "SMP-002",
+    "category": "Electronics",
+    "brand": "GalaxyTech",
+    "price": 8500000,
+    "stock": 25
+  },
+  {
+    "id": 3,
+    "title": "Wireless Headphones",
+    "code": "HDP-003",
+    "category": "Accessories",
+    "brand": "SoundMax",
+    "price": 750000,
+    "stock": 40
+  },
+  {
+    "id": 4,
+    "title": "Mechanical Keyboard RGB",
+    "code": "KEY-004",
+    "category": "Computer",
+    "brand": "KeyMaster",
+    "price": 1200000,
+    "stock": 18
+  },
+  {
+    "id": 5,
+    "title": "Gaming Mouse Elite",
+    "code": "MSE-005",
+    "category": "Computer",
+    "brand": "ClickPro",
+    "price": 450000,
+    "stock": 35
+  },
+  {
+    "id": 6,
+    "title": "4K Smart TV 55 Inch",
+    "code": "TVS-006",
+    "category": "Home Electronics",
+    "brand": "VisionPlus",
+    "price": 7200000,
+    "stock": 10
+  },
+  {
+    "id": 7,
+    "title": "Bluetooth Speaker Mini",
+    "code": "SPK-007",
+    "category": "Audio",
+    "brand": "BoomBox",
+    "price": 350000,
+    "stock": 50
+  },
+  {
+    "id": 8,
+    "title": "Smartwatch Active",
+    "code": "SWT-008",
+    "category": "Wearable",
+    "brand": "FitGear",
+    "price": 1800000,
+    "stock": 22
+  },
+  {
+    "id": 9,
+    "title": "External SSD 1TB",
+    "code": "SSD-009",
+    "category": "Storage",
+    "brand": "DataFast",
+    "price": 1400000,
+    "stock": 16
+  },
+  {
+    "id": 10,
+    "title": "Portable Power Bank 20000mAh",
+    "code": "PWB-010",
+    "category": "Accessories",
+    "brand": "ChargeUp",
+    "price": 500000,
+    "stock": 60
+  },
+  {
+    "id": 11,
+    "title": "Digital Camera Zoom X",
+    "code": "CAM-011",
+    "category": "Photography",
+    "brand": "PhotoSnap",
+    "price": 6200000,
+    "stock": 8
+  },
+  {
+    "id": 12,
+    "title": "Office Chair Ergonomic",
+    "code": "CHR-012",
+    "category": "Furniture",
+    "brand": "ComfortSeat",
+    "price": 2300000,
+    "stock": 14
+  },
+  {
+    "id": 13,
+    "title": "LED Desk Lamp",
+    "code": "LMP-013",
+    "category": "Home",
+    "brand": "BrightLite",
+    "price": 275000,
+    "stock": 33
+  },
+  {
+    "id": 14,
+    "title": "Air Purifier CleanPro",
+    "code": "AIR-014",
+    "category": "Home Appliances",
+    "brand": "FreshAir",
+    "price": 3100000,
+    "stock": 9
+  },
+  {
+    "id": 15,
+    "title": "Vacuum Cleaner Turbo",
+    "code": "VCM-015",
+    "category": "Home Appliances",
+    "brand": "DustAway",
+    "price": 2100000,
+    "stock": 11
+  },
+  {
+    "id": 16,
+    "title": "Coffee Maker Deluxe",
+    "code": "COF-016",
+    "category": "Kitchen",
+    "brand": "CafeBrew",
+    "price": 950000,
+    "stock": 19
+  },
+  {
+    "id": 17,
+    "title": "Electric Kettle FastBoil",
+    "code": "KTL-017",
+    "category": "Kitchen",
+    "brand": "HeatQuick",
+    "price": 320000,
+    "stock": 45
+  },
+  {
+    "id": 18,
+    "title": "Microwave Oven Compact",
+    "code": "MWO-018",
+    "category": "Kitchen",
+    "brand": "CookEase",
+    "price": 1750000,
+    "stock": 13
+  },
+  {
+    "id": 19,
+    "title": "Fitness Treadmill Home",
+    "code": "TRD-019",
+    "category": "Sports",
+    "brand": "RunFit",
+    "price": 5400000,
+    "stock": 7
+  },
+  {
+    "id": 20,
+    "title": "Mountain Bike Trail",
+    "code": "BIK-020",
+    "category": "Sports",
+    "brand": "SpeedRide",
+    "price": 4200000,
+    "stock": 6
+  },
+  {
+    "id": 21,
+    "title": "Running Shoes AirFlex",
+    "code": "SHO-021",
+    "category": "Fashion",
+    "brand": "StepUp",
+    "price": 890000,
+    "stock": 28
+  },
+  {
+    "id": 22,
+    "title": "Backpack Travel 40L",
+    "code": "BAG-022",
+    "category": "Travel",
+    "brand": "AdventurePack",
+    "price": 650000,
+    "stock": 20
+  },
+  {
+    "id": 23,
+    "title": "Sunglasses UV Protection",
+    "code": "SUN-023",
+    "category": "Fashion",
+    "brand": "ShadeX",
+    "price": 280000,
+    "stock": 55
+  },
+  {
+    "id": 24,
+    "title": "Printer All-in-One",
+    "code": "PRT-024",
+    "category": "Office",
+    "brand": "PrintLine",
+    "price": 1950000,
+    "stock": 15
+  },
+  {
+    "id": 25,
+    "title": "Router WiFi 6",
+    "code": "RTR-025",
+    "category": "Networking",
+    "brand": "NetSpeed",
+    "price": 1100000,
+    "stock": 17
+  },
+  {
+    "id": 26,
+    "title": "USB Flash Drive 128GB",
+    "code": "USB-026",
+    "category": "Storage",
+    "brand": "FlashGo",
+    "price": 180000,
+    "stock": 70
+  },
+  {
+    "id": 27,
+    "title": "Tablet Study Pad",
+    "code": "TAB-027",
+    "category": "Electronics",
+    "brand": "EduTech",
+    "price": 3900000,
+    "stock": 21
+  },
+  {
+    "id": 28,
+    "title": "Monitor IPS 27 Inch",
+    "code": "MNT-028",
+    "category": "Computer",
+    "brand": "ViewSharp",
+    "price": 2700000,
+    "stock": 12
+  },
+  {
+    "id": 29,
+    "title": "Webcam Full HD",
+    "code": "WBC-029",
+    "category": "Accessories",
+    "brand": "StreamCam",
+    "price": 420000,
+    "stock": 29
+  },
+  {
+    "id": 30,
+    "title": "Drone Camera Explorer",
+    "code": "DRN-030",
+    "category": "Photography",
+    "brand": "SkyVision",
+    "price": 7800000,
+    "stock": 5
+  }
+]

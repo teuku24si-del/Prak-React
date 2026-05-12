@@ -42,7 +42,17 @@ export default function Sidebar() {
                     className={menuClass}>
                         Customers
                     </NavLink>
+                    
                     </li>
+
+                      <li>
+                    <NavLink 
+                    to="/Products"
+                    className={menuClass}>
+                       Product
+                    </NavLink>
+                    </li>
+
 
                      <li><NavLink to="/Error400" className={menuClass}>Error 400</NavLink></li>
 
