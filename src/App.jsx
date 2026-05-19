@@ -9,6 +9,7 @@ const Orders = React.lazy(() => import("./pages/Orders"));
 const Customers = React.lazy(() => import("./pages/Customers"));
 const Products = React.lazy(() => import("./pages/Products"));
 const ProductDetail = React.lazy(() => import("./pages/ProductDetail"));
+const Components = React.lazy(() => import("./pages/Components"));
 const NotFound = React.lazy(() => import("./pages/NotFound"));
 const Error400 = React.lazy(() => import("./pages/Error400"));
 const Error401 = React.lazy(() => import("./pages/Error401"));
@@ -33,6 +34,7 @@ function App() {
         <Route path="/customers" element={<Customers />} />
         <Route path="/products" element={<Products />} />
         <Route path="/products/:id" element={<ProductDetail />} />
+        <Route path="/components" element={<Components />} />
 
         <Route path="/Error400" element={<Error400 />} />
         <Route path="/Error401" element={<Error401 />} />
