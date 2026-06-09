@@ -6,6 +6,7 @@ import "./assets/tailwind.css";
 import { Route, Routes } from "react-router-dom";
 import Loading from "./components/Loading";
 import FiturXyz from "./pages/FiturXyz";
+import Notes from "./pages/Notes";
 const Orders = React.lazy(() => import("./pages/Orders"));
 const Customers = React.lazy(() => import("./pages/Customers"));
 const Products = React.lazy(() => import("./pages/Products"));
@@ -37,6 +38,7 @@ function App() {
         <Route path="/products/:id" element={<ProductDetail />} />
         <Route path="/components" element={<Components />} />
         <Route path="/fiturxyz" element={<FiturXyz />} />
+        <Route path="/notes" element={<Notes />} />
 
         <Route path="/Error400" element={<Error400 />} />
         <Route path="/Error401" element={<Error401 />} />
